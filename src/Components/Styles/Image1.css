@@ -1,0 +1,23 @@
+#Image1 {
+  background: url("https://usaherald.com/wp-content/uploads/2017/06/Animal-Rescue.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 600px;
+  margin: 0;
+  padding: 10px;
+  border-radius: 0px;
+}
+
+#Image2 {
+  background: url("http://d2mlnkprj9wd81.cloudfront.net/sites/default/files/imagecache/themeSlideshow/theme-AR_0.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 600px;
+  margin: 0;
+  padding: 10px;
+  border-radius: 0px;
+}

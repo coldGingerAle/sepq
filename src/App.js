@@ -1,30 +1,23 @@
 import React, { Component } from 'react';
 import Transition from 'react-transition-group/Transition';
 import axios from 'axios';
-import styles from './styles';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import styles from './TransitionStyles/styles';
+
 import Card from './Components/Card';
-
+import Navbar from './Components/Navbar';
+import Carousel from './Components/Carousel';
+import Image1 from './Components/Image1';
+import Image2 from './Components/Image2';
 import './App.css';
-
-const Fade = ({ in: inProp, component, index }) => (
-  <Transition in={inProp} timeout={300}>
-    {(state) => (
-      <div style={{
-        ...styles.defaultStyle,
-        ...styles.transitionStyles[state]
-      }}>
-      {component}
-      </div>
-    )}
-  </Transition>
-);
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = ({
       show: [],
-      posts: []
+      posts: [],
+      showImage: false
     })
   }
   componentDidMount() {
@@ -43,18 +36,16 @@ class App extends Component {
       })
       .then((trueArray) => {
         this.setState({
-          show: trueArray
+          show: trueArray,
+          showImage: true
         })
       })
   }
+
   render() {
     const show = this.state.show;
+    const showImage = this.state.showImage;
     const posts = this.state.posts.map((post, index) => {
-      console.log(index)
-      return <Fade in={show[index]} component={<Card paragraph={post.body} title={post.title} postType={post.postType}/>}/>
-    })
-
-    const posts2 = this.state.posts.map((post, index) => {
       return (
         <Transition in={show[index]} timeout={300 + index * 150}>
           {(state) => (
@@ -68,9 +59,13 @@ class App extends Component {
         </Transition>
       )
     })
+
     return (
       <div className="App">
-        {posts2}
+        <MuiThemeProvider>
+          <Navbar />
+          <Image1 />
+        </MuiThemeProvider>
       </div>
     );
   }

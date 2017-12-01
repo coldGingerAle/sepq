@@ -1,0 +1,19 @@
+a {
+  font-size: 20px !important;
+}
+
+nav {
+  background-color: #BE7459 !important;
+}
+
+#logo {
+  height: 200px;
+  width: 200px;
+  color: white !important;
+  border-radius: 50%;
+  float: left !important;
+  opacity: 1 !important;
+  border: 5px solid red;
+  margin-left: -800px;
+  margin-top: 10px;
+}
