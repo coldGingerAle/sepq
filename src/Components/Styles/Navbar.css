@@ -3,17 +3,17 @@ a {
 }
 
 nav {
-  background-color: #BE7459 !important;
+  background-color: #009688 !important;
 }
 
 #logo {
-  height: 200px;
-  width: 200px;
+  height: 175px;
+  width: 175px;
   color: white !important;
   border-radius: 50%;
   float: left !important;
   opacity: 1 !important;
-  border: 5px solid red;
+  border: 5px solid gray;
   margin-left: -800px;
   margin-top: 10px;
 }

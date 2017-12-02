@@ -1,5 +1,5 @@
 #Image1 {
-  background: url("https://usaherald.com/wp-content/uploads/2017/06/Animal-Rescue.jpg") no-repeat center center fixed;
+  background: url("https://files.slack.com/files-pri/T6T17AR25-F88QCQFEE/18055857_415715218797465_7138072528059915776_o.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -20,4 +20,13 @@
   margin: 0;
   padding: 10px;
   border-radius: 0px;
+}
+
+#mission {
+  font-family: 'Lobster', cursive;
+}
+
+#mission-paragraph {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
 }

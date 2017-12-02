@@ -4,7 +4,7 @@ import './Styles/Image1.css'
 class Image1 extends Component {
   render() {
     return(
-      <div className="row">
+      <div className="row" style={{backgroundColor: 'red'}}>
         <div id="Image1" className="col m12 card">
         </div>
       </div>

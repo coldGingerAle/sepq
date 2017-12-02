@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import PopOverExampleSimple from './PopOverExampleSimple';
 import './Styles/Navbar.css';
 import './Styles/Dropdown.css'
@@ -10,14 +11,15 @@ class Navbar extends Component {
         <div className="navbar-fixed">
           <nav>
             <div className="nav-wrapper">
-              <a className="brand-logo left"><img id="logo" src="https://pbs.twimg.com/profile_images/664157362178035713/kqLs8AbB.jpg"/></a>
+              <a className="brand-logo left"><img id="logo" src="https://scontent-lga3-1.xx.fbcdn.net/v/t35.0-12/23432792_10210086931114078_260728260_o.jpg?oh=5d6cf317fab2547ee3b8db7a672e0caf&oe=5A24CEC4"/></a>
               <ul className="right hide-on-med-and-down">
-                <li><PopOverExampleSimple/></li>
-                <li><a>About Us</a></li>
+                <li><a onClick={() => this.props.history.push('/')}>Home</a></li>
+                <li><a onClick={() => this.props.history.push('/aboutus')}>About Us</a></li>
                 <li><a>Adopt</a></li>
-                <li><a>View Incidents</a></li>
-                <li><a>Profile</a></li>
-                <li style={{marginRight: 100, marginLeft: 100}}><a className="btn waves-effect waves-light"><i className="fa fa-paw" aria-hidden="true" style={{marginTop: -12}}></i> Log In</a></li>
+                <li><a>Askseptopus</a></li>
+                <li><a>Team</a></li>
+                <li><PopOverExampleSimple/></li>
+                <li style={{marginRight: 100}}><a>Connect</a></li>
               </ul>
             </div>
         </nav>
@@ -27,4 +29,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default withRouter(Navbar);
