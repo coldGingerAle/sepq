@@ -90,13 +90,16 @@ class Landing extends Component {
             <h1 style={{margin: 0, padding: 20, color: 'white'}}>Our Mission</h1>
             <div style={{width: '60%', margin: '0 auto', color: 'white', fontFamily: 'Raleway', fontSize: 20}}>
               <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                We believe in democracy, the wisdom of the crowd, and the power of cooperation. 
+                By stream-lining student's access to already existing resources and providing settings 
+                for collaborative problem-solving and innovation, we can generate a culture of learning
+                and civic engagement that lasts long after graduation. 
               </p>
             </div>
           </div>
           <div style={{marginTop: -20, padding: 40, backgroundColor: '#65BAFC', height: 400}}>
             <div className="card" style={{width: '60%', margin: '0 auto', padding: 20}}>
-              <h1>Ask us a question!</h1>
+              <h1>Ask Us Anything</h1>
               <AutoComplete
                 hintText="Ask Septopus!"
                 searchText={this.state.searchText}

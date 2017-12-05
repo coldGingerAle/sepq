@@ -17,7 +17,7 @@ class Navbar extends Component {
                 <li><a onClick={() => this.props.history.push('/aboutus')}>About Us</a></li>
                 <li><a>Adopt</a></li>
                 <li><a>Askseptopus</a></li>
-                <li><a>Team</a></li>
+                <li><a href="https://medium.com/sepqc">Blog</a></li>
                 <li><PopOverExampleSimple/></li>
                 <li style={{marginRight: 100}}><a>Connect</a></li>
               </ul>
