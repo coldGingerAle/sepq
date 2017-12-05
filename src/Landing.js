@@ -100,7 +100,7 @@ class Landing extends Component {
           <div style={{marginTop: -20, padding: 40, backgroundColor: '#65BAFC', height: 400}}>
             <div className="card" style={{width: '60%', margin: '0 auto', padding: 20}}>
               <h1>Ask Us Anything</h1>
-              <AutoComplete
+            <AutoComplete
                 hintText="Ask Septopus!"
                 searchText={this.state.searchText}
                 onUpdateInput={this.handleUpdateInput}
@@ -111,6 +111,10 @@ class Landing extends Component {
                 fullWidth={true}
               />
             </div>
+            <div style={{marginTop: 50}}>
+              <a target="_blank" href="https://docs.google.com/document/d/1JcP1Ltc96bdy10ObgLBeKClJaq7SN--Z1Hr3TG6FMXY/edit" style={{marginLeft: 100, marginRight: 100, width: 500}} className="waves-effect waves-light btn">Free Events In NY</a>
+              <a target="_blank" href="https://docs.google.com/document/d/1uJGEAUPqCXn0Dbu5Jl22lSssmEGaNx8i7ZbwePfS1BU/edit#heading=h.x97t9sneepo4" style={{marginLeft: 100, marginRight: 100, width: 500}} className="waves-effect waves-light btn">Free Books and Courses</a>
+            </div>
           </div>
           <Footer />
         </MuiThemeProvider>
@@ -120,3 +124,5 @@ class Landing extends Component {
 }
 
 export default withRouter(Landing);
+
+
