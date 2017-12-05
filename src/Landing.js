@@ -91,7 +91,7 @@ class Landing extends Component {
             <div style={{width: '60%', margin: '0 auto', color: 'white', fontFamily: 'Raleway', fontSize: 20}}>
               <p>
                 We believe in democracy, the wisdom of the crowd, and the power of cooperation. 
-                By stream-lining student's access to already existing resources and providing settings 
+                By stream-lining students' access to already existing resources and providing settings 
                 for collaborative problem-solving and innovation, we can generate a culture of learning
                 and civic engagement that lasts long after graduation. 
               </p>
