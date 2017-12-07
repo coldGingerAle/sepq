@@ -11,7 +11,7 @@ class Navbar extends Component {
         <div className="navbar-fixed">
           <nav>
             <div className="nav-wrapper">
-              <a className="brand-logo left"><img id="logo" src="https://scontent-lga3-1.xx.fbcdn.net/v/t35.0-12/23432792_10210086931114078_260728260_o.jpg?oh=5d6cf317fab2547ee3b8db7a672e0caf&oe=5A24CEC4"/></a>
+              <a className="brand-logo left"><img id="logo" src="https://i.imgur.com/35g7tZK.jpg"/></a>
               <ul className="right hide-on-med-and-down">
                 <li><a onClick={() => this.props.history.push('/')}>Home</a></li>
                 <li><a onClick={() => this.props.history.push('/team')}>Team</a></li>
