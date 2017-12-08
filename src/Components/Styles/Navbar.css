@@ -10,10 +10,10 @@ nav {
   height: 175px;
   width: 175px;
   color: white !important;
-  border-radius: 50%;
+  /*border-radius: 50%; */
   float: left !important;
   opacity: 1 !important;
-  border: 5px solid gray;
+  border: none;
   margin-left: -800px;
-  margin-top: 10px;
+  margin-top: -15px;
 }
