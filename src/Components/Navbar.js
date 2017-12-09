@@ -8,10 +8,10 @@ class Navbar extends Component {
   render() {
     return(
       <div>
-        <div className="navbar-fixed">
+        <div className="navbar">
           <nav>
             <div className="nav-wrapper">
-              <a className="brand-logo left"><img id="logo" src="https://i.imgur.com/qy6H3GF.png"/></a>
+              <a className="brand-logo"><img id="logo" src="https://i.imgur.com/qy6H3GF.png"/></a>
               <ul className="right hide-on-med-and-down">
                 <li><a onClick={() => this.props.history.push('/')}>Home</a></li>
                 <li><a onClick={() => this.props.history.push('/team')}>Team</a></li>
